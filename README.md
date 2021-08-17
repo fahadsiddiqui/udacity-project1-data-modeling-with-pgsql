@@ -89,8 +89,7 @@ the `ON CONFLICT UPDATE` part of the `UPSERT` statement to get the new value bei
 
 ### Find Songs Query
 
-It selects `song_id` and `artist_id` by JOINing `songs` and `artists` tables ON `artist_id`. The problem this query is
-solving is that there is no information about `artist_id` and `song_id` in the log file so we had to JOIN these two
+It selects `song_id` and `artist_id` by JOINing `songs` and `artists` tables ON `artist_id`. The problem this query is solving is that there is no information about `artist_id` and `song_id` in the log file so we had to JOIN these two
 tables to get the required information (to insert in songplays table) based on `title`, `artist_name` and `duration`.
 
 ## Description of Project Files/Directories
